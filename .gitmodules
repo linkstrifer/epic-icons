@@ -1,3 +1,3 @@
 [submodule "gulp"]
 	path = gulp
-	url = https://github.com/linkstrifer/gulp-tasks.git
+	url = ../gulp-tasks.git
