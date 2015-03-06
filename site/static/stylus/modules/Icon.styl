@@ -1,0 +1,33 @@
+.Icon
+	display inline-block
+.Icon-hamburger
+	cursor pointer
+	display block
+	height 25px
+	i
+		background-color white
+		display block
+		height 5px
+		position relative
+		top 10px
+		transition .5s ease-in-out
+		width 30px
+		&:after
+		&:before
+			background-color white
+			content ''
+			display block
+			height 5px
+			transition .5s ease-in-out
+			width 30px
+		&:after
+			transform translate3d(0, 100%, 0)
+		&:before
+			transform translate3d(0, -200%, 0)
+	&:hover
+		i
+			background-color transparent
+			&:after
+				transform translate3d(0, -50%, 0) rotate(45deg)
+			&:before
+				transform translate3d(0, 50%, 0) rotate(-45deg)
