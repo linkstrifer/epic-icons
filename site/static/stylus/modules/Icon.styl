@@ -6,53 +6,14 @@ velocity = 250ms
 	margin 10px
 [class^="Icon-"]
 [class*=" Icon-"]
-	padding 20px
-.Icon-hamburger
 	cursor pointer
 	display block
-	height 25px
+	padding 20px
 	i
-		background-color white
-		display block
-		height 5px
-		position relative
-		top 10px
 		transition velocity ease-in-out
-		width 30px
 		&:after
 		&:before
-			background-color white
-			content ''
-			display block
-			height 5px
 			transition velocity ease-in-out
-			width 30px
-		&:after
-			transform translate3d(0, 100%, 0)
-		&:before
-			transform translate3d(0, -200%, 0)
-	&.close
-		&:hover
-			i
-				background-color transparent
-				&:after
-					transform translate3d(0, -50%, 0) rotate(45deg)
-				&:before
-					transform translate3d(0, 50%, 0) rotate(-45deg)
-	&.substract
-		&:hover
-			i
-				&:after
-				&:before
-					background-color transparent
-					transform translate3d(0, 0, 0)
-	&.back
-		&:hover
-			i
-				background-color transparent
-				&:after
-					transform translate3d(3px, 1px, 0) rotate(45deg)
-					width 20px
-				&:before
-					transform translate3d(3px, -5px, 0) rotate(-45deg)
-					width 20px
+
+@import 'Icon-hamburger.styl'
+@import 'Icon-dots.styl'
