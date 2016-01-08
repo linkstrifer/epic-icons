@@ -1,0 +1,19 @@
+velocity = 250ms
+
+.Icon
+	background-color rgba(255,255,255,.2)
+	display inline-block
+	margin 10px
+[class^="Icon-"]
+[class*=" Icon-"]
+	cursor pointer
+	display block
+	padding 20px
+	i
+		transition velocity ease-in-out
+		&:after
+		&:before
+			transition velocity ease-in-out
+
+@import 'Icon-hamburger.styl'
+@import 'Icon-dots.styl'
